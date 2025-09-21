@@ -1,0 +1,11 @@
+#!/bin/sh
+exec 2>&1
+set -e
+sv check dbus >/dev/null || exit 1
+
+# respect system locale
+[ -r /etc/locale.conf ] && . /etc/locale.conf && export LANG
+
+[ -f ./conf ] && . ./conf
+
+exec sddm -nodaemon 2>&1
