@@ -1,0 +1,10 @@
+#!/bin/sh
+exec >/dev/console 2>&1
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+. /etc/runit/functions
+for f in /etc/runit/shutdown.d/*.sh; do 
+	[ -r "$f" ] && . "$f"
+done
+
+msg "your system is shutting down now! ciao :3!"
