@@ -1,6 +1,6 @@
 ## runit-gentoo
 ##### this repo contains my personal runit config along with service files that weren't included in Powerman's gentoo overlay!
-##### this repo is also based on [void-runit](https://github.com/void-linux/void-runit/tree/master), the default runit config that gentoo comes with and [runit-rc](https://github.com/neeshy/runit-rc)!
+##### this repo is also based on [void-runit](https://github.com/void-linux/void-runit/tree/master), the default runit config that gentoo comes with, and [runit-rc](https://github.com/neeshy/runit-rc)!
 
 ### disclaimer!!!
 ##### this config may not work on your system since i only tested these scripts on gentoo
