@@ -1,6 +1,0 @@
-#!/bin/sh
-exec 2>&1
-mkdir -p /var/run/dbus
-rm /var/run/dbus.pid
-dbus-uuidgen --ensure=/etc/machine-id
-exec dbus-daemon --nofork --system

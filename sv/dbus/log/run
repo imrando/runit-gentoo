@@ -1,3 +1,0 @@
-#!/bin/sh
-exec &>/var/log/all/.log
-exec chpst -u log svlogd -tt /var/log/dbus/*/
