@@ -1,4 +1,0 @@
-#!/bin/bash
-exec &>/var/log/all/.log
-sv start /etc/service/dbus &>/dev/null || exit
-exec /lib64/elogind/elogind
