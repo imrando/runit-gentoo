@@ -83,14 +83,14 @@ sudo/doas grub-mkconfig -o /boot/grub/grub.cfg
 <br>
 
 step 1: install the eselect-repository tool to enable the Powerman overlay! 
-###### (this overlay contains various packages meant for gentoo being used with runit as it's main init such as service files for runit or runit without the default config)
+###### this overlay contains various packages meant for gentoo being used with runit as it's main init such as service files for runit or runit without the default config
 
 ```
 sudo/doas emerge -a app-eselect/eselect-repository
 ```
 
 step 2: enable the overlay! 
-###### (it's also recomended to enable the guru overlay to be able to install packages that aren't on the main gentoo repository! guru is esentially the gentoo equivalent of the aur!)
+###### it's also recomended to enable the guru overlay to be able to install packages that aren't on the main gentoo repository! guru is esentially the gentoo equivalent of the aur!
 
 ```
 sudo/doas eselect repository enable powerman
@@ -98,7 +98,7 @@ sudo/doas eselect repository enable guru
 ```
 
 step 3: sync the repositories!
-###### (this subcommand makes it so you're able to install the newest version of any package form every single repository!) 
+###### this command makes it so you're able to install the newest version of any package form every single repository! 
 ```
 sudo/doas emerge --sync
 ```
